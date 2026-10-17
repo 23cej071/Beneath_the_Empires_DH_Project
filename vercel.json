@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd beneath-the-empires && npm install",
+  "buildCommand": "cd beneath-the-empires && npm run build",
+  "outputDirectory": "beneath-the-empires/dist",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

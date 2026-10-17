@@ -1,0 +1,38 @@
+[
+  {
+    "start": 0,
+    "end": 5,
+    "mr": "[Marathi line 1: replace with a properly sourced transcription]",
+    "en": "[English translation 1: replace with licensed field transcription]"
+  },
+  {
+    "start": 5,
+    "end": 10,
+    "mr": "[Marathi line 2: replace with a properly sourced transcription]",
+    "en": "[English translation 2: replace with licensed field transcription]"
+  },
+  {
+    "start": 10,
+    "end": 15,
+    "mr": "[Marathi line 3: replace with a properly sourced transcription]",
+    "en": "[English translation 3: replace with licensed field transcription]"
+  },
+  {
+    "start": 15,
+    "end": 20,
+    "mr": "[Marathi line 4: replace with a properly sourced transcription]",
+    "en": "[English translation 4: replace with licensed field transcription]"
+  },
+  {
+    "start": 20,
+    "end": 25,
+    "mr": "[Marathi line 5: replace with a properly sourced transcription]",
+    "en": "[English translation 5: replace with licensed field transcription]"
+  },
+  {
+    "start": 25,
+    "end": 30,
+    "mr": "[Marathi line 6: replace with a properly sourced transcription]",
+    "en": "[English translation 6: replace with licensed field transcription]"
+  }
+]

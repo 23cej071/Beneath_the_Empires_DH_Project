@@ -1,0 +1,494 @@
+{
+  "project": "Beneath the Empires",
+  "schemaVersion": "1.1",
+  "vocab": {
+    "era": ["1850s", "1860s", "1870s", "1940s"],
+    "laborType": ["Domestic", "Fishing", "Carrying", "Artisan", "Industrial"],
+    "materialElement": ["Fabric", "Jewelry", "Posture", "Tool"]
+  },
+  "items": [
+    {
+      "id": "grain-miller-1871",
+      "era": "1870s",
+      "laborType": "Domestic",
+      "materialElements": ["Fabric", "Posture", "Tool"],
+      "dc": {
+        "title": "Domestic Grain Miller",
+        "creator": "Unknown British colonial photographer / administrative survey",
+        "date": "1871",
+        "subject": ["grindmill", "chakki", "domestic labor", "Ovi"],
+        "spatial": "Courtyard of a house, India (Western India context)",
+        "format": "Albumen print; digitized JPEG",
+        "rights": "Public domain (verify on Commons page)",
+        "source": {
+          "repository": "Wikimedia Commons",
+          "file": "File:Photograph_of_two_women_grinding_grain_in_the_yard_of_a_house_in_India_in_1871.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Photograph_of_two_women_grinding_grain_in_the_yard_of_a_house_in_India_in_1871.jpg"
+        },
+        "description": "Two women work a stone hand-mill in a courtyard. Grinding was daily, gendered, unpaid household labor that consumed hours before dawn. The seated posture, loose coarse cotton and bare forearms show a body adapted to a repetitive, rotational task. The work was accompanied by Ovi songs, which preserve women's own commentary on marriage, kin, hardship and devotion."
+      },
+      "bte": {
+        "ergonomicFunction": "Low seated posture stabilizes the pelvis against the mill's rotational torque; unhemmed, unrestrictive cotton allows hip and shoulder rotation; bare forearms avoid snagging on the handle.",
+        "aiCritiqueNotes": [
+          "Fabric hallucinated as hemmed, dyed silk with golden zari border",
+          "Bangles and bridal gold necklaces added that are inconsistent with heavy labor",
+          "Skin lightened and posed face-to-camera with a demure studio smile",
+          "Mill rendered as a decorative ceramic prop rather than heavy chiseled basalt"
+        ]
+      },
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Photograph_of_two_women_grinding_grain_in_the_yard_of_a_house_in_India_in_1871.jpg",
+        "alt": "Two women seated on the ground working a stone hand-mill in a courtyard, 1871"
+      },
+      "aiImage": {
+        "url": "/ai/ai-01.jpg",
+        "generator": "Midjourney v6.1 [Historical Bias Benchmark]",
+        "promptId": "P1",
+        "generatedOn": "2024-03-15",
+        "alt": "AI-generated image of women grinding grain with silk sarees and gold jewelry"
+      },
+      "prompt": "Historical documentary photograph of two working-class 19th-century Indian women grinding grain with a stone mill in a household courtyard, Western India, 1871, authentic daily household labor, coarse unhemmed cotton sarees, bare forearms, natural daylight, archival albumen print style --v 6.1 --style raw",
+      "model": "Midjourney v6.1 [Diffusion Benchmark]",
+      "auditPins": [
+        {
+          "id": "audit-p1",
+          "x": 52,
+          "y": 68,
+          "category": "Fabric",
+          "label": "Hallucination: Regal Silk Saree",
+          "text": "Model hallucinated a lustrous, embroidered silk saree with golden zari borders. Historical evidence shows rough, unhemmed khadi cotton designed to endure flour grit and physical friction."
+        },
+        {
+          "id": "audit-p2",
+          "x": 64,
+          "y": 42,
+          "category": "Jewelry",
+          "label": "Hallucination: Bridal Gold Necklaces",
+          "text": "Heavy layered gold jewelry was generated despite caste sumptuary bans. Manual agrarian millers wore minimal pewter or copper-alloy bangles that would not snag against rotating timber pegs."
+        },
+        {
+          "id": "audit-p3",
+          "x": 42,
+          "y": 32,
+          "category": "Posture",
+          "label": "Hallucination: Demure Studio Posing",
+          "text": "Model positioned the subject upright facing the camera with a placid smile. Actual grinding required a grounded pelvis, splayed knees, and forward-leaning mechanical leverage."
+        },
+        {
+          "id": "audit-p4",
+          "x": 48,
+          "y": 82,
+          "category": "Tool",
+          "label": "Hallucination: Decorative Ceramic Prop",
+          "text": "The grinding mill is rendered as an ornamental saucer without the chiseled basalt grain, central pivot peg, or rotational handle essential to grain milling."
+        }
+      ],
+      "discrepancies": {
+        "fabric": {
+          "title": "Fabric & Material Texture",
+          "groundTruth": "Coarse, unhemmed handloom cotton; loose weave and raw edges allow hip/shoulder rotation during pre-dawn grinding while absorbing sweat and flour dust.",
+          "hallucination": "Opulent high-sheen Banarasi silk with metallic zari borders, completely unsuited to abrasive milling tasks and physically prohibitive for subaltern tillers."
+        },
+        "jewelry": {
+          "title": "Ornaments & Adornment",
+          "groundTruth": "Bare forearms with modest pewter or brass bangles; zero dangling necklaces to prevent fatal snagging against the spinning wooden chakki peg.",
+          "hallucination": "Lavish bridal gold chokers, jhumkas, and gemstone armlets derived from royal court portraiture and contemporary Bollywood stereotyping."
+        },
+        "ergonomics": {
+          "title": "Biomechanics & Stance",
+          "groundTruth": "Low splayed-knee seated posture stabilizing the pelvic girdle; rotational torque driven by core musculature and sustained for several hours before dawn.",
+          "hallucination": "Passive upright studio pose with coy smile; arms placed gently on the millstone without muscular engagement or mechanical purchase."
+        }
+      },
+      "pins": [
+        { "id": "p1", "x": 38, "y": 62, "category": "Posture", "label": "Seated grinding stance", "text": "Knees spread and pelvis grounded: the whole torso, not the arms alone, drives the mill." },
+        { "id": "p2", "x": 55, "y": 48, "category": "Fabric", "label": "Unhemmed coarse cotton", "text": "Raw edges and loose weave: low-cost, breathable, replaced often. Not the dyed, bordered fabric AI tends to invent." },
+        { "id": "p3", "x": 47, "y": 75, "category": "Tool", "label": "Stone chakki", "text": "Two-stone hand-mill. Its rhythm set the meter of Ovi songs." }
+      ],
+      "audio": { "id": "ovi-demo", "src": "/audio/grindmill-demo.wav", "note": "Grindmill Ovi demonstration recording synthesized from historical folk meter." }
+    },
+    {
+      "id": "koli-fisherwoman-1860s",
+      "era": "1860s",
+      "laborType": "Fishing",
+      "materialElements": ["Fabric", "Tool", "Posture"],
+      "dc": {
+        "title": "Koli Coastal Fisherwoman",
+        "creator": "William Johnson (collection)",
+        "date": "circa 1860s",
+        "subject": ["Koli", "fisherwomen", "kashta drape", "fish basket"],
+        "spatial": "Bombay, Konkan coast",
+        "format": "Albumen print; digitized JPEG",
+        "rights": "Public domain (verify on Commons page)",
+        "source": {
+          "repository": "Wikimedia Commons",
+          "file": "File:Fisherwomen_of_Bombay_(9125320059).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Fisherwomen_of_Bombay_(9125320059).jpg"
+        },
+        "description": "Koli women were central to the fish trade: they sorted, carried and sold the catch. The sari is hitched high in a kashta-style drape to free the legs for wet sand and surf, and a cane basket (tokri) carries the catch. Their economic independence contrasts with the dependent, domestic image in elite portraiture."
+      },
+      "bte": {
+        "ergonomicFunction": "Knee-high hitching prevents fabric from becoming heavy and clinging in water; barefoot stance improves grip on wet sand; basket loads are balanced against the hip or head.",
+        "aiCritiqueNotes": [
+          "Drape lengthened to ankle, losing the functional split-leg kashta wading design",
+          "Pristine, dry silk fabric devoid of saltwater stains or brine weathering",
+          "Gold nose-ring (nath) and royal jewelry exaggerated into an 'exotic' studio trope",
+          "Cane fish basket replaced by a decorative brass or ceramic vessel"
+        ]
+      },
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fisherwomen_of_Bombay_(9125320059).jpg",
+        "alt": "Koli fisherwomen of Bombay with baskets, 1860s"
+      },
+      "aiImage": {
+        "url": "/ai/ai-02.jpg",
+        "generator": "Midjourney v6.1 [Subaltern Visual Audit]",
+        "promptId": "P2",
+        "generatedOn": "2024-03-15",
+        "alt": "AI-generated image of a fisherwoman with floor-length drape and gold jewelry"
+      },
+      "prompt": "Full body portrait of an 1860s Koli fisherwoman in Bombay, coastal Maharashtra, carrying a cane fish basket on hip, standing on wet sand, authentic historical photography style, albumen print, kashta drape saree, nineteenth century Bombay Presidency --v 6.1 --style raw",
+      "model": "Midjourney v6.1 [Visual Bias Test]",
+      "auditPins": [
+        {
+          "id": "audit-p1",
+          "x": 46,
+          "y": 72,
+          "category": "Fabric",
+          "label": "Hallucination: Ankle-Length Draped Saree",
+          "text": "Model rendered a floor-length formal saree. Real Koli fisherwomen hitched their Nauvari knee-high (kashta drape) to prevent waterlogging when wading into incoming surf."
+        },
+        {
+          "id": "audit-p2",
+          "x": 58,
+          "y": 28,
+          "category": "Jewelry",
+          "label": "Hallucination: Elite Gold Nose-Ring (Nath)",
+          "text": "AI generated an extravagant gold and pearl bridal nath. Working coastal fisherwomen wore resilient silver/brass studs, avoiding fragile precious metals in heavy surf."
+        },
+        {
+          "id": "audit-p3",
+          "x": 65,
+          "y": 48,
+          "category": "Tool",
+          "label": "Hallucination: Polished Decorative Brass Urn",
+          "text": "The open-weave cane fish basket (tokri) was hallucinated as an ornamental brass urn, completely misconstruing maritime labor tools."
+        },
+        {
+          "id": "audit-p4",
+          "x": 52,
+          "y": 92,
+          "category": "Posture",
+          "label": "Hallucination: Delicate Posed Slippers",
+          "text": "Model hallucinated footwear or manicured delicate feet. Coastal fishing demanded bare, tough, calloused soles for gripping slippery mud and wet reef rocks."
+        }
+      ],
+      "discrepancies": {
+        "fabric": {
+          "title": "Fabric & Material Texture",
+          "groundTruth": "High knee-hitch kashta drape permitting deep wading into sea-surf; thick, durable indigo or madder coarse handloom cotton impervious to brine.",
+          "hallucination": "Ankle-length flowing silk and chiffon that would instantly absorb saltwater, drag down the laborer, and pose a life-threatening drowning hazard in surf."
+        },
+        "jewelry": {
+          "title": "Ornaments & Adornment",
+          "groundTruth": "Sturdy silver hoop earrings, heavy base-metal wrist bangles, and sun-darkened skin adapted to harsh marine exposure.",
+          "hallucination": "Extravagant bridal gold nath, forehead tikka, and fair porcelain skin reflecting upper-caste domestic ideals rather than coastal labor."
+        },
+        "ergonomics": {
+          "title": "Biomechanics & Stance",
+          "groundTruth": "Wide, grounded barefoot stance with asymmetrical pelvic brace to support heavy 15-20kg wet cane fish baskets against hip or head.",
+          "hallucination": "Demure S-curve fashion stance with limp arms and symmetrical weight distribution, lacking functional core and leg bracing."
+        }
+      },
+      "pins": [
+        { "id": "p1", "x": 45, "y": 70, "category": "Fabric", "label": "Knee-high kashta drape", "text": "The hem is pulled up between the legs: a functional adaptation to surf and wet work." },
+        { "id": "p2", "x": 60, "y": 35, "category": "Tool", "label": "Cane fish basket (tokri)", "text": "Open-weave cane drains water and carries the catch to market." },
+        { "id": "p3", "x": 50, "y": 92, "category": "Posture", "label": "Barefoot stance", "text": "Bare feet grip wet sand; shoes would be a hazard." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "water-carrier-1873",
+      "era": "1870s",
+      "laborType": "Carrying",
+      "materialElements": ["Fabric", "Tool", "Posture"],
+      "dc": {
+        "title": "Urban Water Carrier / Porter",
+        "creator": "Archaeological Survey of India (collection)",
+        "date": "1873",
+        "subject": ["water carrier", "chumbal", "head-loading", "handa"],
+        "spatial": "Urban Western India",
+        "format": "Photograph; digitized JPEG",
+        "rights": "Public domain (verify on Commons page)",
+        "source": {
+          "repository": "Wikimedia Commons",
+          "file": "File:Indian_woman_with_a_metal_water_vessel_on_head_in_1873.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Indian_woman_with_a_metal_water_vessel_on_head_in_1873.jpg"
+        },
+        "description": "Before piped water reached poorer districts, women carried water from public sources, often for hire. A twisted cloth pad (chumbal) sits between skull and metal handa, distributing load down the spine. Head-loading was a learned skill, and the visible, upright carriage reflects trained biomechanics rather than ornament."
+      },
+      "bte": {
+        "ergonomicFunction": "The chumbal cushions and stabilizes the vessel; an erect spine channels the load through the vertebral column; a free hand steadies and balances.",
+        "aiCritiqueNotes": [
+          "Chumbal head-ring omitted; vessel floats unrealistically atop styled hair",
+          "Polished decorative brass pitcher substituted for a heavy beaten copper/brass handa",
+          "Dramatic S-curve dance posture that would cause catastrophic spinal injury under load",
+          "Lavish bridal necklaces and flawless skin tone added"
+        ]
+      },
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_woman_with_a_metal_water_vessel_on_head_in_1873.jpg",
+        "alt": "Woman carrying a metal water vessel on her head, 1873"
+      },
+      "aiImage": {
+        "url": "/ai/ai-03.jpg",
+        "generator": "DALL-E 3 [Urban Labor Audit]",
+        "promptId": "P3",
+        "generatedOn": "2024-03-15",
+        "alt": "AI-generated image of a water carrier with floating vessel and dance posture"
+      },
+      "prompt": "Historical documentary photograph of an Indian working-class woman in 1873, urban water carrier, carrying heavy metal water handa on head with cloth ring, natural lighting, documentary archival style, nineteenth century Bombay Presidency --v 6.1 --style raw",
+      "model": "DALL-E 3 [Diffusion Bias Benchmark]",
+      "auditPins": [
+        {
+          "id": "audit-p1",
+          "x": 50,
+          "y": 14,
+          "category": "Tool",
+          "label": "Hallucination: Missing Chumbal (Load Pad)",
+          "text": "The generative model completely omitted the twisted cloth chumbal ring, depicting a 20kg vessel resting miraculously on silky styled hair without pressure marks."
+        },
+        {
+          "id": "audit-p2",
+          "x": 50,
+          "y": 8,
+          "category": "Tool",
+          "label": "Hallucination: Miniature Decorative Pitcher",
+          "text": "The wide-mouthed, utilitarian hammered metal handa was shrunken into a polished decorative vase with negligible water-carrying capacity."
+        },
+        {
+          "id": "audit-p3",
+          "x": 52,
+          "y": 42,
+          "category": "Posture",
+          "label": "Hallucination: Arching S-Curve Dance Posture",
+          "text": "Model generated a romanticized dance posture with tilted hips and arched lower back. True head-loading requires strict vertical spinal alignment to channel load through vertebrae."
+        },
+        {
+          "id": "audit-p4",
+          "x": 48,
+          "y": 62,
+          "category": "Fabric",
+          "label": "Hallucination: Dry Silk Festive Nauvari",
+          "text": "The garment was rendered as pristine, dry silk with gold embroidery. Archival reality shows durable cotton stained by water splashing and bound tightly for walking miles."
+        }
+      ],
+      "discrepancies": {
+        "fabric": {
+          "title": "Fabric & Material Texture",
+          "groundTruth": "Heavy handspun cotton, hitched firmly around thighs with water-splashed hems and dark indigo dyeing to conceal damp soil and dust.",
+          "hallucination": "Pristine, dry silk or satin drape with gold borders, displaying zero evidence of water-splash, sweat, or urban grit."
+        },
+        "jewelry": {
+          "title": "Ornaments & Adornment",
+          "groundTruth": "Utilitarian base-metal bangles, simple cord amulets, and protective godna soot tattoos along forearms; absence of loose hanging gems.",
+          "hallucination": "Elaborate multi-tier gold necklaces, gemstone pendants, and bridal waistbands that would snag on carried vessels."
+        },
+        "ergonomics": {
+          "title": "Biomechanics & Stance",
+          "groundTruth": "Strict axial spinal stacking with skull-cushioning chumbal ring; head balanced squarely above thoracic vertebrae to withstand 15-25kg loads.",
+          "hallucination": "Arched lower back, cocked hip, and tilted neck in a classical Odissi or Kathak dance pose, biomechanically impossible under genuine load."
+        }
+      },
+      "pins": [
+        { "id": "p1", "x": 50, "y": 14, "category": "Tool", "label": "Chumbal head-pad", "text": "Twisted cloth ring that cushions the skull and anchors the vessel." },
+        { "id": "p2", "x": 50, "y": 8, "category": "Tool", "label": "Metal handa", "text": "Heavy, utilitarian vessel. A full load could weigh a significant fraction of the carrier's body weight." },
+        { "id": "p3", "x": 50, "y": 45, "category": "Posture", "label": "Spinal alignment", "text": "Neutral, upright spine transfers load through the vertebrae rather than the neck muscles." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "dhed-artisan-1850s",
+      "era": "1850s",
+      "laborType": "Artisan",
+      "materialElements": ["Fabric", "Jewelry"],
+      "dc": {
+        "title": "Dhed Women of Surat",
+        "creator": "William Johnson (collection)",
+        "date": "circa 1850s",
+        "subject": ["Dhed", "Dalit", "handspun cloth", "pewter jewelry", "sumptuary custom"],
+        "spatial": "Surat, Bombay Presidency",
+        "format": "Albumen print; digitized JPEG",
+        "rights": "Public domain (verify on Commons page)",
+        "source": {
+          "repository": "Wikimedia Commons",
+          "file": "File:Dhed_Women_of_Surat_(9903113624).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dhed_Women_of_Surat_(9903113624).jpg"
+        },
+        "description": "Dhed (Dalit) women in a caste-labeled colonial portrait. Coarse handspun cloth and heavy cast-metal armlets and anklets are visible. Caste custom restricted who could wear gold or fine fabric, so base-metal jewelry marked social position while also serving as stored wealth that could be pawned. Read with caution: the photograph was made as an ethnographic 'type'."
+      },
+      "bte": {
+        "ergonomicFunction": "Short, coarse skirt allows movement for weaving, carrying and field work; heavy metal armlets double as portable savings.",
+        "aiCritiqueNotes": [
+          "Gold and gemstone Kundan ornaments replace solid cast pewter and lead",
+          "Fine silk and embroidered brocade erase caste-enforced sumptuary dress restrictions",
+          "Skin digitally lightened, converting subaltern survival testimony into an elite glamour portrait"
+        ]
+      },
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dhed_Women_of_Surat_(9903113624).jpg",
+        "alt": "Dhed women of Surat in coarse cloth and heavy metal ornaments"
+      },
+      "aiImage": {
+        "url": "/ai/ai-04.jpg",
+        "generator": "Midjourney v6.1 [Subaltern Audit]",
+        "promptId": "P4",
+        "generatedOn": "2024-03-15",
+        "alt": "AI-generated image of lower-caste women with gold and fine silk"
+      },
+      "prompt": "Colonial studio portrait of two 19th-century working-class Dhed artisan women in Surat, Bombay Presidency, 1850s, wearing coarse handspun skirts and heavy cast pewter armlets and anklets, early ethnographic albumen photography --v 6.1 --style raw",
+      "model": "Midjourney v6.1 [Subaltern Audit]",
+      "auditPins": [
+        {
+          "id": "audit-p1",
+          "x": 40,
+          "y": 55,
+          "category": "Jewelry",
+          "label": "Hallucination: Gold Kundan Armbands",
+          "text": "Model converted heavy cast pewter/lead armlets into radiant gold. Strict Brahminical and colonial sumptuary codes legally barred Dalit communities from adorning themselves in gold."
+        },
+        {
+          "id": "audit-p2",
+          "x": 50,
+          "y": 70,
+          "category": "Fabric",
+          "label": "Hallucination: Brocade Silk Skirts",
+          "text": "The coarse, undyed wool and rough handspun cotton skirt was replaced with rich jacquard brocade, erasing caste-defined material subjugation."
+        },
+        {
+          "id": "audit-p3",
+          "x": 48,
+          "y": 28,
+          "category": "Posture",
+          "label": "Hallucination: Lightened Complexion & Salon Posing",
+          "text": "AI models systematically apply Eurocentric and upper-caste beauty filters, lightening dark subaltern skin and erasing the weathered labor history etched on the subject's face."
+        }
+      ],
+      "discrepancies": {
+        "fabric": {
+          "title": "Fabric & Material Texture",
+          "groundTruth": "Rough, uneven handspun khadi skirt and coarse cotton drape; durable, heavy, and dyed with cheap local earth pigments.",
+          "hallucination": "Intricate gold-embroidered silk brocade with lustrous sheen, violating historic caste sumptuary boundaries."
+        },
+        "jewelry": {
+          "title": "Ornaments & Adornment",
+          "groundTruth": "Massive cast pewter, zinc, and lead armlets and anklets; served as tangible pawnable family savings and enforced subaltern markers.",
+          "hallucination": "Delicate 22k yellow gold filigree and precious gemstone settings historically forbidden to Dhed women by ruling elites."
+        },
+        "ergonomics": {
+          "title": "Biomechanics & Stance",
+          "groundTruth": "Dignified, stoic gaze under oppressive colonial ethnographic scrutiny; grounded stance honed by spinning, weaving, and manual agricultural labor.",
+          "hallucination": "Submissive, romanticized boudoir pose with retouched porcelain skin and coquettish gaze erasing historical resilience."
+        }
+      },
+      "pins": [
+        { "id": "p1", "x": 40, "y": 55, "category": "Jewelry", "label": "Cast pewter armlets", "text": "Heavy base-metal ornaments: identity marker and pawnable savings." },
+        { "id": "p2", "x": 50, "y": 70, "category": "Fabric", "label": "Handspun coarse skirt", "text": "Uneven weave and muted color. Worn for durability, not display." },
+        { "id": "p3", "x": 55, "y": 88, "category": "Jewelry", "label": "Anklets", "text": "Heavy anklets: a bodily 'bank' that also signals caste custom." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "mill-operative-1940s",
+      "era": "1940s",
+      "laborType": "Industrial",
+      "materialElements": ["Fabric", "Posture", "Tool"],
+      "dc": {
+        "title": "Bombay Textile Mill Operative",
+        "creator": "US Office of War Information (Library of Congress)",
+        "date": "circa 1944",
+        "subject": ["Girni Kamgar", "textile mill", "bobbin winding", "WWII"],
+        "spatial": "Girangaon, Bombay",
+        "format": "Photograph; digitized JPEG",
+        "rights": "Public domain (US federal government work; verify)",
+        "source": {
+          "repository": "Wikimedia Commons / Library of Congress",
+          "file": "File:Girl_workers_in_a_booming_Bombay_textile_mill_8b09843v.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Girl_workers_in_a_booming_Bombay_textile_mill_8b09843v.jpg"
+        },
+        "description": "Women were concentrated in lower-paid winding and reeling departments of Bombay's mills. During WWII, demand for textiles rose while inflation and food scarcity pressed on mill families. Pallus are tightly tucked at the waist to avoid being caught in fast-moving machinery. Note the propaganda context: the photo was produced for a wartime US audience."
+      },
+      "bte": {
+        "ergonomicFunction": "Tucked pallu and fitted blouse reduce snag risk near spindles; standing posture at a winding frame required endurance across long shifts.",
+        "aiCritiqueNotes": [
+          "Loose, flowing pallu generated—a fatal snag hazard in high-speed spinning mills",
+          "Sterile, clean studio factory generated with zero cotton lint, grease, or deafening machinery",
+          "Smiling 'content worker' propaganda pose replacing physical exhaustion of 10-hour shifts",
+          "Modernized, anachronistic chrome machinery generated"
+        ]
+      },
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Girl_workers_in_a_booming_Bombay_textile_mill_8b09843v.jpg",
+        "alt": "Women workers winding bobbins in a Bombay textile mill, 1940s"
+      },
+      "aiImage": {
+        "url": "/ai/ai-05.jpg",
+        "generator": "Stable Diffusion XL [Industrial Corpus Benchmark]",
+        "promptId": "P5",
+        "generatedOn": "2024-03-15",
+        "alt": "AI-generated image of a mill worker with loose flowing pallu and smiling face"
+      },
+      "prompt": "Documentary photograph of an Indian woman factory worker in a Bombay textile mill, Girangaon, 1944, winding bobbins at mechanical spinning frames, saree pallu tightly tucked at waist, industrial mill interior, WWII era --v 6.1 --style raw",
+      "model": "Stable Diffusion XL [Industrial Corpus]",
+      "auditPins": [
+        {
+          "id": "audit-p1",
+          "x": 48,
+          "y": 52,
+          "category": "Fabric",
+          "label": "Hallucination: Loose Floating Pallu",
+          "text": "Model generated an unrestrained, dramatic flowing pallu. In Girangaon's spinning sheds, loose garments caused fatal machine entanglements; mill women tightly knotted pallus into waistbands."
+        },
+        {
+          "id": "audit-p2",
+          "x": 46,
+          "y": 24,
+          "category": "Posture",
+          "label": "Hallucination: Carefree Smiling Model Posing",
+          "text": "Model rendered a carefree, smiling fashion model leaning against apparatus, whitewashing the intense heat, chronic byssinosis (brown lung), and bodily fatigue of wartime 10-hour mill shifts."
+        },
+        {
+          "id": "audit-p3",
+          "x": 65,
+          "y": 64,
+          "category": "Tool",
+          "label": "Hallucination: Pristine Futuristic Machinery",
+          "text": "Rendered shiny chrome and polished brass mechanisms instead of the heavy, oil-streaked, belt-driven cast-iron Platt Brothers winding frames of 1940s Bombay."
+        }
+      ],
+      "discrepancies": {
+        "fabric": {
+          "title": "Fabric & Material Texture",
+          "groundTruth": "Practical cotton mill-cloth with pallu securely cinched into the waist; lint-speckled fabric tailored to avert spindle entrapment.",
+          "hallucination": "Voluminous, billowing chiffon or organza pallu drifting near high-speed machinery—a lethal industrial hazard."
+        },
+        "jewelry": {
+          "title": "Ornaments & Adornment",
+          "groundTruth": "Bare wrists, minimal cord amulets, or small iron rings; absence of loose glass bangles to prevent shattering around machine bobbins.",
+          "hallucination": "Stacks of gleaming decorative glass bangles and dangling necklace pendants unsuited to industrial shop floors."
+        },
+        "ergonomics": {
+          "title": "Biomechanics & Stance",
+          "groundTruth": "Forward-braced standing stance with acute eye-hand vigilance across rotating frames to splice snapped yarn ends on moving spindles.",
+          "hallucination": "Casual, passive modeling lean against machinery with soft gaze, exhibiting zero mechanical awareness or ergonomic strain."
+        }
+      },
+      "pins": [
+        { "id": "p1", "x": 48, "y": 50, "category": "Fabric", "label": "Tucked pallu", "text": "Pallu secured at the waist to keep loose cloth out of the machinery." },
+        { "id": "p2", "x": 62, "y": 62, "category": "Tool", "label": "Bobbin winding frame", "text": "High-speed repetitive work; a department where women were concentrated." },
+        { "id": "p3", "x": 45, "y": 25, "category": "Posture", "label": "Forward standing stance", "text": "Sustained forward lean across long shifts." }
+      ],
+      "audio": null
+    }
+  ]
+}
