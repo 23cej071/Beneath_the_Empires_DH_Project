@@ -1,0 +1,10 @@
+{
+  "name": "beneath-the-empires-root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm --prefix beneath-the-empires run dev",
+    "build": "npm --prefix beneath-the-empires run build",
+    "preview": "npm --prefix beneath-the-empires run preview"
+  }
+}
